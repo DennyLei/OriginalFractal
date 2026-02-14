@@ -5,7 +5,7 @@ public void setup(){
 }
 
 public void mousePressed(){
-  myFractal(mouseX,mouseY.480);
+  myFractal(mouseX,mouseY,480);
 }
 
 public void myFractal(int x, int y, int size){
@@ -21,5 +21,6 @@ public void myFractal(int x, int y, int size){
     myFractal(x,y+size/2,size/2);
   }
 }
+
 
 
