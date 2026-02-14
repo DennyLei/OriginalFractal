@@ -5,7 +5,7 @@ public void setup(){
   noFill();
 }
 
-public void setup(){
+public void draw(){
   background(0);
   myFractal(250,250,480);
 }
@@ -26,6 +26,7 @@ public void myFractal(int x, int y, int size){
     myFractal(x, y+size/3, size/2);
   }
 }
+
 
 
 
