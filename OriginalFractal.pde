@@ -11,7 +11,7 @@ public void mousePressed(){
 public void myFractal(int x, int y, int size){
   stroke(random(255), random(255), random(255));
   noFill();
-  circle(x,y,size);
+  circle(x,y,size/10);
 
   if(size > 20){
     myFractal(x-size/3, y, size/2);
@@ -20,6 +20,7 @@ public void myFractal(int x, int y, int size){
     myFractal(x, y+size/3, size/2);
   }
 }
+
 
 
 
