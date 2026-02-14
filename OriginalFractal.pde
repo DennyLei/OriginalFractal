@@ -1,6 +1,6 @@
 public void setup(){
   size(1000,1000);
-
+  rectMode(CENTER);
 }
 
 public void draw(){
@@ -18,6 +18,7 @@ public void myFractal(int x, int y, int siz){
     myFractal(x, y+siz/3, siz/2);
   }
 }
+
 
 
 
