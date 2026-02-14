@@ -8,7 +8,7 @@ public void draw(){
 }
 
 public void myFractal(int x, int y, int size){
-  int c = (int)(Math.random()*255);
+  int c = (int)(Math.random()*100)+80;
   stroke(c);
   noFill();
   circle(x,y,size);
@@ -20,3 +20,4 @@ public void myFractal(int x, int y, int size){
     myFractal(x,y+size/2,size/2);
   }
 }
+
