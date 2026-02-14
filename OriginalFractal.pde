@@ -8,18 +8,19 @@ background(0);
 myFractal(250,250,480);
 }
 
-public void myFractal(int x, int y, int size){
+public void myFractal(int x, int y, int siz){
   stroke(random(255), random(255), random(255));
   noFill();
-  circle(x,y,size/10);
+  circle(x,y,siz/10);
 
-  if(size > 20){
-    myFractal(x-size/3, y, size/2);
-    myFractal(x+size/3, y, size/2);
-    myFractal(x, y-size/3, size/2);
-    myFractal(x, y+size/3, size/2);
+  if(siz > 10){
+    myFractal(x-siz/3, y, siz/2);
+    myFractal(x+siz/3, y, siz/2);
+    myFractal(x, y-siz/3, siz/2);
+    myFractal(x, y+siz/3, siz/2);
   }
 }
+
 
 
 
