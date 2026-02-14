@@ -9,18 +9,18 @@ public void mousePressed(){
 }
 
 public void myFractal(int x, int y, int size){
-  int c = (int)(Math.random()*100)+80;
-  stroke(c);
+  stroke(random(255), random(255), random(255));
   noFill();
   circle(x,y,size);
 
-  if(size>10){
-    myFractal(x-size/2,y,size/2);
-    myFractal(x+size/2,y,size/2);
-    myFractal(x,y-size/2,size/2);
-    myFractal(x,y+size/2,size/2);
+  if(size > 20){
+    myFractal(x-size/3, y, size/2);
+    myFractal(x+size/3, y, size/2);
+    myFractal(x, y-size/3, size/2);
+    myFractal(x, y+size/3, size/2);
   }
 }
+
 
 
 
