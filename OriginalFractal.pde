@@ -9,8 +9,6 @@ myFractal(250,250,480);
 }
 
 public void myFractal(int x, int y, int siz){
-  stroke(random(255), random(255), random(255));
-  noFill();
   circle(x,y,siz/10);
 
   if(siz > 10){
@@ -20,6 +18,7 @@ public void myFractal(int x, int y, int siz){
     myFractal(x, y+siz/3, siz/2);
   }
 }
+
 
 
 
