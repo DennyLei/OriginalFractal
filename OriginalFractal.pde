@@ -1,29 +1,23 @@
 public void setup(){
-  size(1000,1000);
-  rectMode(CENTER);
+  size(500,500);
+  background(0);
+  stroke(255);
+  strokeWeight(2);
+  noFill();
+  myFractal(250,250,480);
 }
 
-public void draw(){
-background(0);
-myFractal(250,250,480);
+public void mousePressed(){
+  myFractal(mouseX, mouseY, 200);
 }
 
-public void myFractal(int x, int y, int siz){
-  circle(x,y,siz/10);
+public void myFractal(int x, int y, int size){
+  circle(x,y,size);
 
-  if(siz > 10){
-    myFractal(x-siz/3, y, siz/2);
-    myFractal(x+siz/3, y, siz/2);
-    myFractal(x, y-siz/3, siz/2);
-    myFractal(x, y+siz/3, siz/2);
+  if(size > 20){
+    myFractal(x-size/3, y, size/2);
+    myFractal(x+size/3, y, size/2);
+    myFractal(x, y-size/3, size/2);
+    myFractal(x, y+size/3, size/2);
   }
 }
-
-
-
-
-
-
-
-
-
