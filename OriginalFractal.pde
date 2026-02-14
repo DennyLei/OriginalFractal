@@ -17,9 +17,10 @@ public void myFractal(int x, int y, int size){
   ellipse(x,y,size,size);
 
   if(size > 20){
-    myFractal(x-size/3, y, size/2);
-    myFractal(x+size/3, y, size/2);
-    myFractal(x, y-size/3, size/2);
-    myFractal(x, y+size/3, size/2);
+    myFractal(x-size/3, y, size/2+(int)(Math.random()*50));
+    myFractal(x+size/3, y, size/2+(int)(Math.random()*50));
+    myFractal(x, y-size/3, size/2+(int)(Math.random()*50));
+    myFractal(x, y+size/3, size/2+(int)(Math.random()*50));
   }
 }
+
