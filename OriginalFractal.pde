@@ -15,4 +15,5 @@ if(size>10){
   myFractal(x,y-size/2,size/2);
   myFractal(x,y+size/2,size/2);
 }
-]
+}
+
