@@ -3,7 +3,6 @@ public void setup(){
 }
 
 public void draw(){
-  background(0);
 myFractal(250,250,480);
 }
 
@@ -18,5 +17,6 @@ if(size>10){
   myFractal(x,y+size/2,size/2);
 }
 }
+
 
 
